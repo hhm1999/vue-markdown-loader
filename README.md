@@ -1,4 +1,5 @@
-### @hhm1999/vue-markdown-loader是一个能让markdown格式文档中的vue示例代码运行起来的loader
+#### 用途
+`@hhm1999/vue-markdown-loader`是一个能让`markdown`格式文档中的`vue`示例代码运行起来的`loader`。
 
 #### 安装
 ```
