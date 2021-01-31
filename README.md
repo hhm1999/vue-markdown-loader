@@ -1,11 +1,11 @@
-#### x-components是一个基于vue的组件库
+### @hhm1999/vue-markdown-loader是一个能让markdown格式文档中的vue示例代码运行起来的loader
 
-##### 安装
+#### 安装
 ```
 npm i @hhm1999/vue-markdown-loader --save-dev
 ```
 
-##### webpack配置
+#### webpack配置
 
 ```javascript
 module.exports = {
@@ -26,7 +26,7 @@ module.exports = {
 }
 ```
 
-##### vue cli配置
+#### vue cli配置
 
 ```javascript
 module.exports = {
@@ -48,10 +48,10 @@ module.exports = {
 
 ```
 
-##### Options
+#### Options
 
-###### demoContainerComponentName
+##### demoContainerComponentName
 用来包裹`示例代码`及`示例代码运行结果`的组件名，该组件必须有`component`和`code`两个`slot`，分别用来放置`示例代码`及`示例代码运行结果`。
 
-##### 原理
+#### 原理
 原理请参考文章：[让Markdown中的Vue代码运行起来](https://segmentfault.com/a/1190000039137759)
