@@ -11,7 +11,7 @@
           <vue_markdown_loader_component_debris_0 />
         </template>
         <template slot="code">
-          <div v-pre><pre><code class="language-vue">&lt;template&gt;
+          <div v-pre><pre><code class="language-html">&lt;template&gt;
   &lt;div :class=&quot;$style.main&quot;&gt;
     &lt;div :class=&quot;$style.top&quot;&gt;
       &lt;x-tooltip content=&quot;上左对齐位置 placement=top-start&quot; placement=&quot;top-start&quot;&gt;
@@ -117,7 +117,7 @@
           <vue_markdown_loader_component_debris_1 />
         </template>
         <template slot="code">
-          <div v-pre><pre><code class="language-vue">&lt;template&gt;
+          <div v-pre><pre><code class="language-html">&lt;template&gt;
   &lt;div :class=&quot;$style.main&quot;&gt;
     &lt;x-tooltip placement=&quot;top-start&quot;&gt;
       &lt;div :class=&quot;$style.content&quot; slot=&quot;content&quot;&gt;
@@ -152,7 +152,7 @@
           <vue_markdown_loader_component_debris_2 />
         </template>
         <template slot="code">
-          <div v-pre><pre><code class="language-vue">&lt;template&gt;
+          <div v-pre><pre><code class="language-html">&lt;template&gt;
   &lt;div :class=&quot;$style.main&quot;&gt;
     &lt;x-tooltip :visibility=&quot;visibility&quot; :interaction=&quot;false&quot; content=&quot;鼠标点击才显示&quot; placement=&quot;right-start&quot;&gt;
       &lt;x-btn @click=&quot;visibility = !visibility&quot; :class=&quot;$style.btn&quot;&gt;点击{{!visibility ? '显示' : '关闭' }}&lt;/x-btn&gt;
