@@ -10,7 +10,7 @@ pipeline {
       }
       steps {
         sh '''npm config set registry http://registry.npm.taobao.org/
-npm ci
+npm i
 npm run test'''
       }
     }
