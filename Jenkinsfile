@@ -9,8 +9,8 @@ pipeline {
 
       }
       steps {
-        sh '''npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm ci
+        sh '''npm config set registry http://registry.npm.taobao.org/
+npm ci
 npm run test'''
       }
     }
