@@ -10,7 +10,7 @@ pipeline {
       }
       steps {
         sh '''npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm ci
+cnpm install
 npm run test'''
       }
     }
@@ -26,8 +26,7 @@ npm run test'''
         sh '''versionOnline=$(npm view @hhm1999/vue-markdown-loader version)
 versionLocal=`node -p "require(\'./package.json\').version"`
 if [ "$versionOnline" != "$versionLocal" ]; then
-npm install -g cnpm --registry=https://registry.npm.taobao.org
-cnpm install -g npm-cli-login
+npm install -g npm-cli-login --registry=https://registry.npm.taobao.org
 NPM_USER=${NPM_USER} NPM_PASS=${NPM_PASS} NPM_EMAIL=${NPM_EMAIL} npm-cli-login
 npm publish --access public
 fi'''
