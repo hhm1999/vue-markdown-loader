@@ -1,6 +1,6 @@
 {
   "name": "@hhm1999/vue-markdown-loader",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "markdown file to vue component loader.",
   "main": "src/loader.js",
   "files": [
