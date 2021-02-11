@@ -14,8 +14,8 @@ export default {
   }
 }
 </script>
-<style scoped lang="scss">
-@import "./github-markdown.css";
+<style lang="scss">
+@import "./github-markdown.scss";
 
 
 </style>

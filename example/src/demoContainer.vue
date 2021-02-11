@@ -1,5 +1,5 @@
 <template>
-  <div class="doc-demo-wrap-main markdown-body">
+  <div class="doc-demo-wrap-main">
     <div class="component">
       <h4 class="title">示例</h4>
       <slot name="component"></slot>
@@ -13,8 +13,8 @@
 
 <script>
 import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-light.css';
 export default {
-  name: 'xDocDemoWrap',
   props: {
   },
   data () {
@@ -22,9 +22,6 @@ export default {
     }
   },
   mounted () {
-    hljs.configure({
-      languages: 'vue'
-    })
     this.$refs.codeContainer.querySelectorAll('pre code').forEach((block) => {
       hljs.highlightBlock(block)
     })
@@ -33,9 +30,6 @@ export default {
   }
 }
 </script>
-<style>
-@import "./github-markdown.css";
-</style>
 <style scoped lang="scss">
 .doc-demo-wrap-main{
   .title{

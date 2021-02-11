@@ -1,35 +1,32 @@
-#### 基本
-最简单的用法。11
+#### 标题
+内容。
 ::: warning
-*here be dragons*
+*这是警告内容*
 :::
-```html
+``` html
 <template>
-  <div @click="test" class="local-storage-demo">
-  1231{{ hhm }}
-  </div>
+  <button @click="handleClick" class="btn">
+    {{ btnText }}
+  </button>
 </template>
 <script>
 export default {
-  props: {
-  },
   data () {
     return {
-      hhm: 12345
+      btnText: '点我'
     }
   },
   methods: {
-    test () {
-      alert(123)
+    handleClick () {
+      alert('hello!')
     }
   },
 }
 </script>
-<style scoped lang="scss">
-.local-storage-demo{
-  .btn{
-    margin-right: 10px;
-  }
+<style module lang="scss">
+.btn{
+  width: 100px;
+  height: 40px;
 }
 </style>
 ```

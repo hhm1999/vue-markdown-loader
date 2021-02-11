@@ -7,7 +7,7 @@
     "src"
   ],
   "scripts": {
-    "example": "cd example && webpack-dev-server --inline --hot --port 1998",
+    "example": "cd example && webpack-dev-server",
     "example-build": "cd example && webpack",
     "test": "jest"
   },
@@ -19,6 +19,7 @@
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.0.4",
     "css-loader": "^1.0.1",
+    "highlight.js": "^10.6.0",
     "jest": "^26.6.3",
     "memfs": "^3.2.0",
     "node-sass": "^4.10.0",
@@ -29,9 +30,9 @@
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "4.46.0",
+    "webpack-cli": "3.3.12",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "fs-extra": "^9.1.0",

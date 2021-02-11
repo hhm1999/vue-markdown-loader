@@ -53,7 +53,7 @@ module.exports = {
           "vue-loader",
           {
             loader: resolve(__dirname, "../src/loader.js"),
-            options: {demoContainerComponentName: 'test'}
+            options: {demoContainerComponentName: 'demoContainer'}
           }
         ]
       }
@@ -64,6 +64,11 @@ module.exports = {
   ],
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    useLocalIp: true,
+    // noInfo: true,
+    host: '0.0.0.0',
+    inline: true,
+    hot: true,
+    port: 1998
   }
 };
